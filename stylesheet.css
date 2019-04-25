@@ -1,0 +1,277 @@
+*{
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    box-sizing: border-box;
+    outline: none !important; *
+}
+
+html{ 
+    height: 100%;
+    width:100%;
+    background-color: #000;
+}
+
+html,body{
+    width: 100%;
+    height: 100%; 
+    position: relative; 
+    font-family: 'Space Mono';
+    /* cursor:url(./images/arrow.cur), auto; */
+    text-transform: capitalize
+}
+
+body{
+    text-align: center;
+    margin:0 auto;
+}
+
+a{
+    color: #282828;
+    text-decoration: none;
+    text-align: center;
+   /* cursor:url(./images/knife.cur), auto; */
+}
+
+img{ 
+    display: block;
+    margin: 0 auto;
+}
+
+
+.title{
+    margin: 0 auto;
+    font-weight: 900;
+    font-size: 1.5em; 
+    padding: 30 0 0 0;
+}
+
+.title img{
+    height: 100px;
+}
+
+.logo{
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.main_body{    
+    height:inherit;
+    overflow-y: scroll;
+    /*background-image: url(./images/view_img.jpg);
+    background-size: cover;
+    background-position:center;*/
+    padding: 80 0 0 0;
+}
+
+.imgWrap{
+    position: relative;
+    margin: 0;
+    display: inline-block;
+}
+
+.imgWrap:hover .imgDescription{
+    visibility: visible;
+    opacity: 1;
+}
+
+.imgDescription{
+    position:absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    visibility: hidden;
+    opacity: 0;
+
+    -webkit-transition: all 0.0s ease-in-out;
+    -moz-transition: all 0.0s ease-in-out;
+    -o-transition: all 0.0s ease-in-out;
+    transition: 0.0s ease-in-out;
+}
+
+.imgDescription img{
+    margin: 0 auto;
+}
+
+
+/* -- NAV BAR -- */
+
+.nav{
+    position: absolute;
+    width:100%;
+    height:50px;
+    margin: 0 auto;
+    text-align: center;  
+    background-color: #000;
+    bottom: 0;
+    z-index:100;
+}
+
+.nav a{
+    /* vertical-align: baseline; */
+    display:inline-block;
+    font-weight: 900;
+    font-size: 16px;
+    color:#fff;
+    padding: 0 0 0 0;
+}
+
+/*
+.nav a:hover {
+    opacity: 0.6; 
+}
+*/
+
+.nav ul{ 
+    /*text-align: right;*/
+    list-style: none;
+    padding-left: 0px;
+}
+
+.nav li{
+    display:inline-block;
+    padding:0 0 0 0;
+}
+
+.links {
+    float: left;
+    width: 50%;
+    padding-right: 20;
+    height: 50px;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.links li a:hover{
+    color: red;
+}
+
+.link1{
+    text-align:left;
+}
+
+.link1 li{
+    padding-left: 20;
+}
+
+.link2{
+    text-align:right;
+}
+
+/* -- END NAV BAR -- */
+
+/* -- MERCHANDISE -- */
+
+.merchandise{
+    margin: 0 auto;
+    text-align: center;
+    padding: 50 0 50 0;
+    
+}
+
+.merch{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 0 0 0;
+}
+
+.merch img{
+    height: 500px;
+}
+
+.merch p{
+    width: 100%;
+    line-height: 25px;
+}
+
+/* -- END MERCHANDISE -- */
+
+
+/* -- BACKGROUND VIDEO -- */
+
+#video-background {
+    position:absolute;
+    left: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto;
+    z-index: -100;
+}
+
+/* -- END BACKGROUND VIDEO -- */
+
+
+/* -- FOOTER -- */
+
+.footer{
+    position:inherit;
+    height: ;
+    margin-top: 0;
+    padding: 0 0 0 0;
+    background-image: url("./images/sus_flame.gif");
+    background-size: cover;
+    bottom:0;
+    
+}
+
+.footer img{
+    display: block;
+    bottom:0;
+    height: 150px;
+}
+
+.footer p{
+    text-align: center;
+    font-size: 20px;
+}
+
+/* -- END FOOTER -- */
+
+
+/* -- SCREEN SIZE RESPONSES -- */
+
+@media (min-width: 1440px){
+    .merchandise {width:1200px;}
+    .merch img{height: 480px;}
+    .merch {padding: 20 50 20 50;}
+}
+
+@media (max-width: 1030px){
+    .merch img{height: 300px;}
+    .merch {padding: 20 50 20 50;}
+    #video-background {left:-30em;}
+}
+
+@media (max-width: 900px){
+    .merch img{height: 280px;}
+    .merch {padding: 0 30 0 30;}
+}
+
+@media (max-width: 767px){
+    .merch img{height: 250px;}
+    .merch{padding: 0 0 20 0;}
+    .title img{height: 80px;}
+}
+
+@media (max-width: 350px){
+    .merch img{height: 220px;}
+}
+
+/* -- END SCREEN SIZE RESPONSES -- */
+
+#image{
+    position:absolute;
+}
