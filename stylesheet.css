@@ -231,6 +231,7 @@ img{
     .links{width:100%; padding-right: 30px; height: 0;}
     .nav a{font-size: .8em;}
     .link1{display:none;}
+    .half-link a{display: none;}
     body{background-image: url(./images/fence.jpg); background-size: cover; }
 }
 
