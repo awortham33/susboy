@@ -171,32 +171,6 @@ img{
 
 /* -- END NAV BAR -- */
 
-/* -- MERCHANDISE -- */
-
-.merchandise{
-    margin: 0 auto;
-    text-align: center;
-    padding: 50 0 50 0;
-    
-}
-
-.merch{
-    display: inline-block;
-    margin: 0 auto;
-    padding: 0 0 0 0;
-}
-
-.merch img{
-    height: 500px;
-}
-
-.merch p{
-    width: 100%;
-    line-height: 25px;
-}
-
-/* -- END MERCHANDISE -- */
-
 
 /* -- BACKGROUND VIDEO -- */
 
@@ -244,31 +218,21 @@ img{
 /* -- SCREEN SIZE RESPONSES -- */
 
 @media (min-width: 1440px){
-    .merchandise {width:1200px;}
-    .merch img{height: 480px;}
-    .merch {padding: 20 50 20 50;}
+
 }
 
 @media (max-width: 1030px){
-    .merch img{height: 300px;}
-    .merch {padding: 20 50 20 50;}
+
     #video-background {left:-30em;}
 }
 
 @media (max-width: 900px){
-    .merch img{height: 280px;}
-    .merch {padding: 0 30 0 30;}
+    #video-background {display:none;}
+    .links{width:100%; padding-right: 40px; height: 0;}
+    .link1{display:none;}
+    body{background-image: url(./images/fence.jpg); background-size: cover; }
 }
 
-@media (max-width: 767px){
-    .merch img{height: 250px;}
-    .merch{padding: 0 0 20 0;}
-    .title img{height: 80px;}
-}
-
-@media (max-width: 350px){
-    .merch img{height: 220px;}
-}
 
 /* -- END SCREEN SIZE RESPONSES -- */
 
