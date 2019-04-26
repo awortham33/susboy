@@ -228,7 +228,8 @@ img{
 
 @media (max-width: 900px){
     #video-background {display:none;}
-    .links{width:100%; padding-right: 40px; height: 0;}
+    .links{width:100%; padding-right: 30px; height: 0;}
+    .nav a{font-size: 12px;}
     .link1{display:none;}
     body{background-image: url(./images/fence.jpg); background-size: cover; }
 }
