@@ -17,7 +17,11 @@ html,body{
     position: relative; 
     font-family: 'Space Mono';
     /* cursor:url(./images/arrow.cur), auto; */
-    text-transform: capitalize
+    text-transform: capitalize;
+    background-image: url(./images/fence.jpg); 
+    background-size: cover;
+    z-index: -200;
+    
 }
 
 body{
